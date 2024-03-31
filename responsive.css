@@ -1,0 +1,239 @@
+@media only screen and (max-width: 572px) {
+    body {
+        background: black;
+    }
+    header {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+        margin-inline: 50px;
+    }
+    .menu-icon i {
+        font-size: 22px;
+    }
+
+    .home__image__sub__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .home__image {
+        position: absolute;
+        top: 0rem;
+        left: 12rem;
+        z-index: -1;
+        width: 180px;
+        height: 350px;
+        opacity: 0.5;
+    }
+    .home__overview {
+        padding-inline: 15%;
+        gap: 25px;
+    }
+    .home__title {
+        font-size: 42px;
+    }
+    .home__subtitle {
+        font-size: 28px;
+    }
+    .home__desc {
+        font-size: 16px;
+    }
+
+    .action__container {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin-block-start: 3.5rem;
+    }
+    .action__container > div {
+        gap: 10px;
+        font-size: 18px;
+    }
+    /* specs styles  */
+    .specs {
+        margin-top: 10%;
+        width: 100%;
+    }
+    .specs__head__title {
+        font-size: 42px;
+    }
+    .specs__container {
+        flex-direction: column;
+        margin-block: 20%;
+    }
+    .specs__content {
+        align-items: center;
+        justify-content: center;
+    }
+    .specs__data {
+        justify-content: center;
+        align-items: center;
+    }
+    .specs__image_container {
+        order: 1;
+    }
+    .specs__image {
+        width: 250px;
+    }
+}
+@media only screen and (min-width: 572px) and (max-width: 767px) {
+    body {
+        background: black;
+    }
+    header {
+        display: none;
+    }
+    .home__image__sub__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .home__image {
+        position: absolute;
+        top: 0rem;
+        left: 12rem;
+        z-index: -1;
+        width: 180px;
+        height: 350px;
+        opacity: 0.5;
+    }
+    .home__overview {
+        max-width: 350px;
+        padding-inline: 8%;
+        gap: 25px;
+    }
+    .home__title {
+        font-size: 42px;
+    }
+    .home__subtitle {
+        font-size: 28px;
+    }
+    .home__desc {
+        font-size: 16px;
+    }
+
+    .action__container {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin-block-start: 3.5rem;
+    }
+    .action__container > div {
+        gap: 10px;
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+    body {
+        background: black;
+    }
+
+    nav ul {
+        font-weight: 500;
+        width: 50%;
+    }
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    .home__image__sub__container {
+        display: flex;
+        align-items: start;
+        margin-top: 4rem;
+        gap: 7rem;
+        width: 80%;
+    }
+    .home__image {
+        top: -5rem;
+        left: 8rem;
+        width: 180px;
+        height: 380px;
+    }
+    @keyframes fade-out {
+        0% {
+            opacity: 1;
+        }
+        60%,
+        100% {
+            opacity: 0;
+        }
+    }
+    .home__overview {
+        max-width: 100%;
+        padding-inline: 4rem;
+        gap: 2rem;
+    }
+    .home__title {
+        font-size: 42px;
+    }
+    .home__subtitle {
+        margin-top: 0;
+        font-size: 28px;
+    }
+    .home__desc {
+        font-size: 16px;
+    }
+
+    .action__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 1rem;
+        margin-block-start: 0;
+    }
+    .action__container > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+    }
+    /* specs  section */
+    .specs {
+        min-height: 700px;
+    }
+
+    .specs__head__title {
+        margin-block-start: 0;
+        font-size: 52px;
+    }
+    .specs__container {
+        gap: 1rem;
+    }
+
+    .specs__icon {
+        font-size: 18px;
+    }
+    .specs__title {
+        font-size: 16px;
+    }
+    .specs__subtitle {
+        opacity: 0.6;
+    }
+    @keyframes reveal {
+        0% {
+            opacity: 0;
+            clip-path: inset(0% 60% 0% 50%);
+        }
+
+        100% {
+            opacity: 1;
+            clip-path: inset(0% 0% 0% 0%);
+        }
+    }
+
+    .specs__image {
+        animation-range: entry 100% cover 55%;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    /* css for laptop devices */
+}
+
+@media only screen and (min-width: 1440px) {
+    /* css for desktop devices */
+}

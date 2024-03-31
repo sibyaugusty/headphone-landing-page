@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Responsive Page with Parallax Hero</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="responsive.css" />
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li class="menu_list active"><a href="#home">Home</a></li>
+                    <li class="menu_list"><a href="#specs">Specs</a></li>
+                    <li class="menu_list"><a href="#case">Case</a></li>
+                    <li class="menu_list"><a href="#products">Products</a></li>
+                </ul>
+                <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
+            </nav>
+        </header>
+
+        <!-- HERO SECTION -->
+        <section id="home" class="home__section">
+            <div class="home__image__sub__container">
+                <div class="home__image__container">
+                    <img src="./img/home.png" class="home__image" alt="" />
+                </div>
+                <div class="home__overview">
+                    <h1 class="home__title">Beats 3</h1>
+                    <h3 class="home__subtitle ">Overview</h3>
+                    <p class="home__desc ">Enjoy award-winning Beats sound with wireless listening freedom and a sleek, streamlined design with comfortable padded earphones, delivering first-rate playback.</p>
+                    <div class="action__container">
+                        <div><i class="fa-solid fa-bag-shopping"></i><span>add to cart</span></div>
+                        <div><i class="fa-solid fa-tag"></i><span>$299</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="specs" id="specs">
+            <h2 class="specs__head__title">Specs</h2>
+            <div class="specs__container">
+                <div class="specs__content">
+                    <div class="specs__data">
+                        <div class="specs__data_sub">
+                            <i class="fa-brands fa-bluetooth-b specs__icon"></i>
+                            <h3 class="specs__title">Connection</h3>
+                        </div>
+                        <div class="specs__subtitle">Bluetooth v5.2</div>
+                    </div>
+                    <div class="specs__data">
+                        <div class="specs__data_sub">
+                            <i class="fa-solid fa-battery-half specs__icon"></i>
+                            <h3 class="specs__title">Battery</h3>
+                        </div>
+                        <div class="specs__subtitle">Duration 40h</div>
+                    </div>
+
+                    <div class="specs__data">
+                        <div class="specs__data_sub">
+                            <i class="fa-solid fa-plug-circle-bolt specs__icon"></i>
+                            <h3 class="specs__title">Load</h3>
+                        </div>
+                        <div class="specs__subtitle">Fast charge 4.2-AAC</div>
+                    </div>
+
+                    <div class="specs__data">
+                        <div class="specs__data_sub">
+                            <i class="fa-solid fa-microphone specs__icon"></i>
+                            <h3 class="specs__title">Microphone</h3>
+                        </div>
+                        <div class="specs__subtitle">Supports Apple Siri and Google</div>
+                    </div>
+                </div>
+                <div class="specs__image_container">
+                    <img src="/img/specs.png" alt="specs" class="specs__image" />
+                </div>
+            </div>
+        </section>
+        <section class="section case" id="case"></section>
+        <section class="section products" id="products"></section>
+        <section class="section"></section>
+        <section class="section"></section>
+        <section class="section"></section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
