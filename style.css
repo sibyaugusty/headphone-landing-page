@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anta&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kalam:wght@300;400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 :root {
     --white-color: #fff;
-    --primary-bg-color: #161616;
+    --primary-bg-color: black;
     --font-nunito: "Nunito", sans-serif;
 }
 
@@ -204,6 +204,7 @@ nav ul li.active a {
     font-weight: 400;
     font-style: normal;
     letter-spacing: 2px;
+    width: 50%;
     opacity: 0.8;
 }
 
@@ -266,7 +267,6 @@ nav ul li.active a {
     align-items: center;
     gap: 5rem;
     margin-block: 5%;
-    padding-inline: clamp(10px, 5vw, 100px);
     /* background: linear-gradient(to right, #232526, #414345); */
 }
 .specs__content {
@@ -310,4 +310,131 @@ nav ul li.active a {
     animation: auto linear reveal both;
     animation-timeline: view();
     animation-range: entry 25% cover 40%;
+}
+
+/* case section style  */
+.case{
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    color: var(--white-color);
+}
+.case__title{
+    font-size: 62px;
+}
+.case__image__container{
+    width: 60%;
+}
+.case__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.case__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2.5rem;
+}
+.case__content p{
+    width: 50%;
+    font-size: 22px;
+    line-height: 2rem;
+
+}
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.case__button {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.case__button .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   button.case__button .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.case__button .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.case__button .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.case__button .case__btn__tex {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .case__btn__tex {
+    color: #fff;
+   }
+.case__image{
+    width: 450px;
 }

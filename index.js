@@ -62,7 +62,7 @@ $(document).ready(function () {
         },
     });
 
-    slide.reveal(".specs__head__title", {
+    slide.reveal(".specs__head__title, .case__title", {
         origin: "bottom",
         duration: 1500,
         afterReveal: function (el) {
@@ -75,6 +75,24 @@ $(document).ready(function () {
         origin: "left",
         interval: 100,
         duration: 1000,
+        afterReveal: function (el) {
+            el.classList.add("fade-out");
+        },
+    });
+    slide.reveal(".case__image", {
+        origin: "left",
+        duration: 1500,
+    });
+    slide.reveal(".case__content p", {
+        origin: "right",
+        duration: 1500,
+        afterReveal: function (el) {
+            el.classList.add("fade-out");
+        },
+    });
+    slide.reveal(".case__button", {
+        origin: "bottom",
+        duration: 1500,
         afterReveal: function (el) {
             el.classList.add("fade-out");
         },
