@@ -87,6 +87,7 @@
     /* case section style  */
     .case {
         gap: 6rem;
+        min-height: 100svh;
     }
     .case__title {
         font-size: 42px;
@@ -111,6 +112,59 @@
     .case__image {
         width: 200px;
     }
+    /* shop now container  */
+    .shop__now {
+        min-height: 120svh;
+    }
+    .shop__now__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        background: linear-gradient(to right, #060606, #111111);
+        padding-block: 5rem;
+        border-radius: 14px;
+    }
+    .shop__now__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 3rem;
+    }
+    .shop__now__title {
+        font-size: 24px;
+        text-align: center;
+    }
+    .shop__now__description {
+        font-size: 18px;
+        text-align: center;
+    }
+    .shop__now__image__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .shop__now__image{
+        width: 150px;
+    }
+    .fancy{
+        width: 80%;
+    }
+    .fancy::before{
+        width: 0.8rem;
+    }
+    .fancy .text{
+        font-size: 12px;
+    }
+    .shop__now__image__container{
+        width: 100%;
+    }
+    .shop__now__image{
+        width: 250px;
+    }
+    
 }
 @media only screen and (min-width: 572px) and (max-width: 767px) {
     body {
