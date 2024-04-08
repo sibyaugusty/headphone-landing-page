@@ -97,7 +97,7 @@ $(document).ready(function () {
             el.classList.add("fade-out");
         },
     });
-    slide.reveal(".shop__now__title, .shop__now__description, .fancy", {
+    slide.reveal(".shop__now__title, .shop__now__description, .fancy, .products__title", {
         origin: "bottom",
         duration: 1500,
         afterReveal: function (el) {
@@ -105,6 +105,15 @@ $(document).ready(function () {
         },
     });
     slide.reveal(".shop__now__image", { origin: "top", duration: 1500 });
+    slide.reveal(".product__card", {
+        origin: "top",
+        duration: 1500,
+        interval: 200,
+        afterReveal: function (el) {
+            el.classList.add("fade-out");
+        },
+    });
+    slide.reveal(".product__img", { origin: "bottom", scale: 0, duration: 1500, interval: 200 });
 });
 
 //expanding header for responsive devices
