@@ -97,7 +97,13 @@ $(document).ready(function () {
             el.classList.add("fade-out");
         },
     });
-    slide.reveal(".shop__now__title, .shop__now__description, .fancy", { origin: "bottom", duration: 1500 });
+    slide.reveal(".shop__now__title, .shop__now__description, .fancy", {
+        origin: "bottom",
+        duration: 1500,
+        afterReveal: function (el) {
+            el.classList.add("fade-out");
+        },
+    });
     slide.reveal(".shop__now__image", { origin: "top", duration: 1500 });
 });
 

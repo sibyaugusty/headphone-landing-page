@@ -164,6 +164,20 @@
     .shop__now__image{
         width: 250px;
     }
+    .products__container {
+        width: 60%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+        
+    }
+    .product__card img {
+        position: absolute;
+        top: -40%;
+        left: 12.5%;
+        width: 150px;
+    }
     
 }
 @media only screen and (min-width: 572px) and (max-width: 767px) {

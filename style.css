@@ -2,6 +2,7 @@
 :root {
     --white-color: #fff;
     --primary-bg-color: black;
+    --secondary-bg-color: rgb(14, 14, 14);
     --font-nunito: "Nunito", sans-serif;
 }
 
@@ -470,27 +471,27 @@ button:hover .case__btn__tex {
     display: grid;
     place-items: center;
     color: var(--white-color);
+
 }
-.shop__now__container{
+.shop__now__container {
     display: flex;
     justify-content: center;
     gap: 5rem;
     width: 60%;
     background: linear-gradient(to right, #060606, #111111);
-    padding-block:  5rem;
+    padding-block: 5rem;
     border-radius: 14px;
-
 }
-.shop__now__content{
+.shop__now__content {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.shop__now__title{
+.shop__now__title {
     font-size: 32px;
     font-family: var(--font-nunito);
 }
-.shop__now__description{
+.shop__now__description {
     font-size: 24px;
     opacity: 0.8;
 }
@@ -516,9 +517,9 @@ button:hover .case__btn__tex {
     user-select: none;
     font-size: 13px;
     width: 70%;
-   }
-   
-   .fancy::before {
+}
+
+.fancy::before {
     content: " ";
     width: 1.5625rem;
     height: 2px;
@@ -529,9 +530,9 @@ button:hover .case__btn__tex {
     transform: translateY(-50%);
     transform-origin: center;
     transition: background 0.3s linear, width 0.3s linear;
-   }
-   
-   .fancy .text {
+}
+
+.fancy .text {
     font-size: 1.125em;
     line-height: 1.33333em;
     padding-left: 2em;
@@ -541,11 +542,11 @@ button:hover .case__btn__tex {
     text-transform: uppercase;
     text-decoration: none;
     color: var(--white-color);
-   }
-   .fancy .text i{
+}
+.fancy .text i {
     margin-inline: 5px;
-   }
-   .fancy .top-key {
+}
+.fancy .top-key {
     height: 2px;
     width: 1.5625rem;
     top: -2px;
@@ -553,9 +554,9 @@ button:hover .case__btn__tex {
     position: absolute;
     background: var(--primary-bg-color);
     transition: width 0.5s ease-out, left 0.3s ease-out;
-   }
-   
-   .fancy .bottom-key-1 {
+}
+
+.fancy .bottom-key-1 {
     height: 2px;
     width: 1.5625rem;
     right: 1.875rem;
@@ -563,9 +564,9 @@ button:hover .case__btn__tex {
     position: absolute;
     background: var(--primary-bg-color);
     transition: width 0.5s ease-out, right 0.3s ease-out;
-   }
-   
-   .fancy .bottom-key-2 {
+}
+
+.fancy .bottom-key-2 {
     height: 2px;
     width: 0.625rem;
     right: 0.625rem;
@@ -573,36 +574,84 @@ button:hover .case__btn__tex {
     position: absolute;
     background: var(--primary-bg-color);
     transition: width 0.5s ease-out, right 0.3s ease-out;
-   }
-   
-   .fancy:hover {
+}
+
+.fancy:hover {
     color: white;
     background: black;
-   }
-   
-   .fancy:hover::before {
+}
+
+.fancy:hover::before {
     width: 0.9375rem;
     background: white;
-   }
-   
-   .fancy:hover .text {
+}
+
+.fancy:hover .text {
     color: white;
     padding-left: 1.5em;
-   }
-   
-   .fancy:hover .top-key {
+}
+
+.fancy:hover .top-key {
     left: -2px;
     width: 0px;
-   }
-   
-   .fancy:hover .bottom-key-1,
-    .fancy:hover .bottom-key-2 {
+}
+
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
     right: 0;
     width: 0;
-   }
-.shop__now__image__container{
+}
+.shop__now__image__container {
     width: 40%;
 }
-.shop__now__image{
+.shop__now__image {
     width: 450px;
+}
+/* products  */
+.products {
+    color: var(--white-color);
+    font-family: var(--font-nunito);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 1000px;
+}
+.products__title {
+    margin-bottom: 10rem;
+}
+.products__container {
+    width: 60%;
+    height: fit-content;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 240px);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25% 0;  
+    justify-content: center;
+    justify-items: center;
+    
+}
+.product__card {
+    position: relative;
+    padding-inline: 1rem;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 16px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    background-color: var(--secondary-bg-color);
+}
+
+.product__card img {
+    position: absolute;
+    top: -40%;
+    width: 150px;
+}
+
+.products__variants__details__container{
+    display: flex;
+    justify-content: space-between;
 }
