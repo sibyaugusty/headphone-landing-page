@@ -1,182 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Responsive Page with Parallax Hero</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="responsive.css" />
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Page with Parallax Hero</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
 
-    <body>
-        <header>
-            <nav>
-                <ul class="menu">
-                    <li class="menu_list active"><a href="#home">Home</a></li>
-                    <li class="menu_list"><a href="#specs">Specs</a></li>
-                    <li class="menu_list"><a href="#case">Case</a></li>
-                    <li class="menu_list"><a href="#products">Products</a></li>
-                </ul>
-                <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
-            </nav>
-        </header>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li class="menu_list active"><a href="#home">Home</a></li>
+          <li class="menu_list"><a href="#specs">Specs</a></li>
+          <li class="menu_list"><a href="#case">Case</a></li>
+          <li class="menu_list"><a href="#products">Products</a></li>
+        </ul>
+        <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
+      </nav>
+    </header>
 
-        <!-- HERO SECTION -->
-        <section id="home" class="home__section">
-            <div class="home__image__sub__container">
-                <div class="home__image__container">
-                    <img src="./img/home.png" class="home__image" alt="" />
-                </div>
-                <div class="home__overview">
-                    <h1 class="home__title">Beats 3</h1>
-                    <h3 class="home__subtitle ">Overview</h3>
-                    <p class="home__desc ">Enjoy award-winning Beats sound with wireless listening freedom and a sleek, streamlined design with comfortable padded earphones, delivering first-rate playback.</p>
-                    <div class="action__container">
-                        <div><i class="fa-solid fa-bag-shopping"></i><span>add to cart</span></div>
-                        <div><i class="fa-solid fa-tag"></i><span>$299</span></div>
-                    </div>
-                </div>
+    <!-- HERO SECTION -->
+    <section id="home" class="home__section">
+      <div class="home__image__sub__container">
+        <div class="home__image__container">
+          <img src="./img/home.png" class="home__image" alt="" />
+        </div>
+        <div class="home__overview">
+          <h1 class="home__title">Beats 3</h1>
+          <h3 class="home__subtitle">Overview</h3>
+          <p class="home__desc">
+            Enjoy award-winning Beats sound with wireless listening freedom and
+            a sleek, streamlined design with comfortable padded earphones,
+            delivering first-rate playback.
+          </p>
+          <div class="action__container">
+            <div>
+              <i class="fa-solid fa-bag-shopping"></i><span>add to cart</span>
             </div>
-        </section>
-        <section class="specs" id="specs">
-            <h2 class="specs__head__title">Specs</h2>
-            <div class="specs__container">
-                <div class="specs__content">
-                    <div class="specs__data">
-                        <div class="specs__data_sub">
-                            <i class="fa-brands fa-bluetooth-b specs__icon"></i>
-                            <h3 class="specs__title">Connection</h3>
-                        </div>
-                        <div class="specs__subtitle">Bluetooth v5.2</div>
-                    </div>
-                    <div class="specs__data">
-                        <div class="specs__data_sub">
-                            <i class="fa-solid fa-battery-half specs__icon"></i>
-                            <h3 class="specs__title">Battery</h3>
-                        </div>
-                        <div class="specs__subtitle">Duration 40h</div>
-                    </div>
-
-                    <div class="specs__data">
-                        <div class="specs__data_sub">
-                            <i class="fa-solid fa-plug-circle-bolt specs__icon"></i>
-                            <h3 class="specs__title">Load</h3>
-                        </div>
-                        <div class="specs__subtitle">Fast charge 4.2-AAC</div>
-                    </div>
-
-                    <div class="specs__data">
-                        <div class="specs__data_sub">
-                            <i class="fa-solid fa-microphone specs__icon"></i>
-                            <h3 class="specs__title">Microphone</h3>
-                        </div>
-                        <div class="specs__subtitle">Supports Apple Siri and Google</div>
-                    </div>
-                </div>
-                <div class="specs__image_container">
-                    <img src="./img/specs.png" alt="specs" class="specs__image" />
-                </div>
+            <div><i class="fa-solid fa-tag"></i><span>$299</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- specs section  -->
+    <section class="specs" id="specs">
+      <h2 class="specs__head__title">Specs</h2>
+      <div class="specs__container">
+        <div class="specs__content">
+          <div class="specs__data">
+            <div class="specs__data_sub">
+              <i class="fa-brands fa-bluetooth-b specs__icon"></i>
+              <h3 class="specs__title">Connection</h3>
             </div>
-        </section>
-        <section class="case" id="case">
-            <h2 class="case__title">Case</h2>
-            <div class="case__container">
-                <div class="case__image__container">
-                    <img src="./img/case.png" alt="case__png" class="case__image" />
-                </div>
-                <div class="case__content">
-                    <p>With a comfortable and adaptable case so that you can store it whenever you want, and keep your durability forever.</p>
-                    <button class="case__button">
-                        <span class="circle" aria-hidden="true">
-                            <span class="icon arrow"></span>
-                        </span>
-                        <span class="case__btn__tex">more info</span>
-                    </button>
-                </div>
+            <div class="specs__subtitle">Bluetooth v5.2</div>
+          </div>
+          <div class="specs__data">
+            <div class="specs__data_sub">
+              <i class="fa-solid fa-battery-half specs__icon"></i>
+              <h3 class="specs__title">Battery</h3>
             </div>
-        </section>
-        <section class="shop__now">
-            <div class="shop__now__container">
-                <div class="shop__now__content">
-                    <h2 class="shop__now__title">
-                        Immerse yourself in <br />
-                        your music
-                    </h2>
-                    <p class="shop__now__description">Get it now, up to 50% off.</p>
-                    <a class="fancy" href="#">
-                        <span class="top-key"></span>
-                        <span class="text"><i class="fas fa-shopping-bag"></i> Shop Now</span>
-                        <span class="bottom-key-1"></span>
-                        <span class="bottom-key-2"></span>
-                    </a>
-                </div>
-                <div class="shop__now__image__container">
-                    <img src="./img/discount.png" alt="discount__image" class="shop__now__image" />
-                </div>
-            </div>
-        </section>
+            <div class="specs__subtitle">Duration 40h</div>
+          </div>
 
-        <section class="products" id="products">
-            <h2 class="products__title">Products</h2>
-            <div class="products__container">
-                <div class="product__card">
-                    <img class="product__img" src="./img/product1.png" alt="" />
-                    <div class="products__variants__details__container">
-                        <div class="products__variants__details">
-                            <h3 class="product__name">Black</h3>
-                            <div class="price__and__rating">$199</div>
-                        </div>
-                        <div class="products__cart_icon"><i class="fas fa-shopping-bag"></i></div>
-                    </div>
-                </div>
-                <div class="product__card">
-                    <img class="product__img" src="./img/product2.png" alt="" />
-                    <div class="products__variants__details__container">
-                        <div class="products__variants__details">
-                            <h3 class="product__name">Red Black</h3>
-                            <div class="price__and__rating">$199</div>
-                        </div>
-                        <div class="products__cart_icon"><i class="fas fa-shopping-bag"></i></div>
-                    </div>
-                </div>
-                <div class="product__card">
-                    <img class="product__img" src="./img/product3.png" alt="" />
-                    <div class="products__variants__details__container">
-                        <div class="products__variants__details">
-                            <h3 class="product__name">Night Black</h3>
-                            <div class="price__and__rating">$199</div>
-                        </div>
-                        <div class="products__cart_icon"><i class="fas fa-shopping-bag"></i></div>
-                    </div>
-                </div>
-                <div class="product__card">
-                    <img class="product__img" src="./img/product4.png" alt="" />
-                    <div class="products__variants__details__container">
-                        <div class="products__variants__details">
-                            <h3 class="product__name">Blue</h3>
-                            <div class="price__and__rating">$199</div>
-                        </div>
-                        <div class="products__cart_icon"><i class="fas fa-shopping-bag"></i></div>
-                    </div>
-                </div>
-                <div class="product__card">
-                    <img class="product__img" src="./img/product5.png" alt="" />
-                    <div class="products__variants__details__container">
-                        <div class="products__variants__details">
-                            <h3 class="product__name">Twilight gray</h3>
-                            <div class="price__and__rating">$199</div>
-                        </div>
-                        <div class="products__cart_icon"><i class="fas fa-shopping-bag"></i></div>
-                    </div>
-                </div>
+          <div class="specs__data">
+            <div class="specs__data_sub">
+              <i class="fa-solid fa-plug-circle-bolt specs__icon"></i>
+              <h3 class="specs__title">Load</h3>
             </div>
-        </section>
-        <section class="section"></section>
-        <section class="section"></section>
+            <div class="specs__subtitle">Fast charge 4.2-AAC</div>
+          </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="index.js"></script>
-    </body>
+          <div class="specs__data">
+            <div class="specs__data_sub">
+              <i class="fa-solid fa-microphone specs__icon"></i>
+              <h3 class="specs__title">Microphone</h3>
+            </div>
+            <div class="specs__subtitle">Supports Apple Siri and Google</div>
+          </div>
+        </div>
+        <div class="specs__image_container">
+          <img src="./img/specs.png" alt="specs" class="specs__image" />
+        </div>
+      </div>
+    </section>
+    <section class="case" id="case">
+      <h2 class="case__title">Case</h2>
+      <div class="case__container">
+        <div class="case__image__container">
+          <img src="./img/case.png" alt="case__png" class="case__image" />
+        </div>
+        <div class="case__content">
+          <p>
+            With a comfortable and adaptable case so that you can store it
+            whenever you want, and keep your durability forever.
+          </p>
+          <button class="case__button">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="case__btn__tex">more info</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="shop__now">
+      <div class="shop__now__container">
+        <div class="shop__now__content">
+          <h2 class="shop__now__title">
+            Immerse yourself in <br />
+            your music
+          </h2>
+          <p class="shop__now__description">Get it now, up to 50% off.</p>
+          <a class="fancy" href="#">
+            <span class="top-key"></span>
+            <span class="text"
+              ><i class="fas fa-shopping-bag"></i> Shop Now</span
+            >
+            <span class="bottom-key-1"></span>
+            <span class="bottom-key-2"></span>
+          </a>
+        </div>
+        <div class="shop__now__image__container">
+          <img
+            src="./img/discount.png"
+            alt="discount__image"
+            class="shop__now__image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <h2 class="products__title">Products</h2>
+      <div class="products__container">
+        <div class="product__card">
+          <img class="product__img" src="./img/product1.png" alt="" />
+          <div class="products__variants__details__container">
+            <div class="products__variants__details">
+              <h3 class="product__name">Black</h3>
+              <div class="price__and__rating">$199</div>
+            </div>
+            <div class="products__cart_icon">
+              <i class="fas fa-shopping-bag"></i>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img class="product__img" src="./img/product2.png" alt="" />
+          <div class="products__variants__details__container">
+            <div class="products__variants__details">
+              <h3 class="product__name">Red Black</h3>
+              <div class="price__and__rating">$199</div>
+            </div>
+            <div class="products__cart_icon">
+              <i class="fas fa-shopping-bag"></i>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img class="product__img" src="./img/product3.png" alt="" />
+          <div class="products__variants__details__container">
+            <div class="products__variants__details">
+              <h3 class="product__name">Night Black</h3>
+              <div class="price__and__rating">$199</div>
+            </div>
+            <div class="products__cart_icon">
+              <i class="fas fa-shopping-bag"></i>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img class="product__img" src="./img/product4.png" alt="" />
+          <div class="products__variants__details__container">
+            <div class="products__variants__details">
+              <h3 class="product__name">Blue</h3>
+              <div class="price__and__rating">$199</div>
+            </div>
+            <div class="products__cart_icon">
+              <i class="fas fa-shopping-bag"></i>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img class="product__img" src="./img/product5.png" alt="" />
+          <div class="products__variants__details__container">
+            <div class="products__variants__details">
+              <h3 class="product__name">Twilight gray</h3>
+              <div class="price__and__rating">$199</div>
+            </div>
+            <div class="products__cart_icon">
+              <i class="fas fa-shopping-bag"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section"></section>
+    <section class="section"></section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
